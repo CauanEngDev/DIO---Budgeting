@@ -1,4 +1,4 @@
-package com.cauandev.budgeting.application;
+package com.cauandev.budgeting;
 
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -12,15 +12,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @SpringBootTest
-@EnabledIfEnvironmentVariable(named = "OPEN_AI_KEY", matches = ".+")
-class OpenAiChatModelIT {
+@EnabledIfEnvironmentVariable(named = "GEMINI_API_KEY", matches = ".+")
+class GeminiChatModelIT {
     @Autowired
     OpenAiApi openAiApi;
 
     @Test
     void should_receiveResponse_when_chatModelIsCalled() {
         var options = OpenAiChatOptions.builder()
-                .model("gpt-4o-mini")
+                .model("gemini-3.6-flash")
                 .temperature(0.8)
                 .responseFormat(ResponseFormat.builder().type(ResponseFormat.Type.TEXT).build())
                 .build();
