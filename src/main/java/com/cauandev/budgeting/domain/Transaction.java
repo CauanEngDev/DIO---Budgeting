@@ -1,8 +1,10 @@
 package com.cauandev.budgeting.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
+@AllArgsConstructor
 public class Transaction {
     private TransactionId id;
     private String description;

@@ -2,7 +2,6 @@ package com.cauandev.budgeting.application;
 
 import com.cauandev.budgeting.application.input.PersistTransactionInput;
 import com.cauandev.budgeting.application.output.TransactionOutput;
-import com.cauandev.budgeting.domain.Category;
 import com.cauandev.budgeting.domain.Transaction;
 import com.cauandev.budgeting.domain.TransactionRepository;
 import org.springframework.stereotype.Service;
